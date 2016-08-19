@@ -6,11 +6,7 @@ header{
 	width: 100%;
 	height:60px;
 	background-color: #fa4b2a;
-	display: inline-block;
 }
-
-
-
 .nav{
 	width:60px;
 	height:60px;
@@ -31,14 +27,11 @@ header{
 	width:8.8rem;
 	float:left;
 }
-
-
 .logo img{
 	width: 100%;
 	height: auto;
 	margin: 12px auto;
 }
-
 .new-articles{
 	margin:3px auto;
 	height:54px;
@@ -47,48 +40,30 @@ header{
 	border-left: 1px solid white;
 	text-align: center;
 	color: white;
-	
 }
-
-.articles{
+.articles
+{
 	display: block;
 }
-
-.new-articles em{
-	font-size: ;
-}
-
-.article-count{
-	font-size: ;
-}
-
-
-
-
-
-
-
 .sidenav {
     height: 100%;
-    width: 0;
+    width:250px;
     position: fixed;
     z-index: 2;
     top: 0;
-    left: 0;
+    left: -252px;
     background-color: #111;
     overflow-x: hidden;
     transition: 0.3s;
     color: white;
     font-family: 'Oswald', sans-serif;
     font-size: 12px;
-
+        border-right: 2px solid #fa4b2a;
     /*padding-top: 60px;*/
 }
-
 .sidenav ul{
 	display: block;
 }
-
 .sidenav ul li img{
 	width:2.3rem;
 	height: auto;
@@ -97,26 +72,159 @@ header{
 .user-icon{
 	    padding: 0.7rem 1rem 0.5rem 1rem;
 }
-
 .sidenav-items{
     border-left: 4px solid #fa4b2a;
 	border-top: 1px solid #2f2f2f;
     padding: 0.7rem 1rem 0.5rem 2.25rem;
     background-color: #222;
-
 }
-
-.closepad{
+.nav-closepad{
 	height: 100%;
-    width: 0;
+    width: 320px;
     position: fixed;
     z-index: 1;
     top: 0;
-    left: 0;
+    left: -322px;
     background-color: #111;
     overflow-x: hidden;
     transition: 0.3s;
-     opacity: 0.3;
+     opacity: 0;
+}
+.articles-closepad{
+	height: 100%;
+    width: 320px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: -322px;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.3s;
+     opacity: 0;
+}
+.articles-div{
+	height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: -252px;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.3s;
+    border-left: 2px solid #fa4b2a;
 }
 
+.box{
+ 	
+	clear: both;
+	width:100%;
+	height:11rem;
+	background-size: cover;
+	position: relative;
+	opacity: .9;
+	box-sizing: border-box;
+	padding: 1rem;
+	color:white;
+	font-family: 'Roboto Slab', serif;
+}
+
+.box-element-1{
+	background-image: url('https://cdn0.vox-cdn.com/thumbor/ivsHgXHY572hECkjL2fcMiZQfZs=/0x0:2039x1147/680x383/cdn0.vox-cdn.com/uploads/chorus_image/image/50439647/twitter-stock-0936.0.0.jpg');
+}
+
+.box-element-2{
+	background-image: url("https://cdn3.vox-cdn.com/thumbor/17EGquPIi4Gb83So72Eczuaxvmg=/0x0:3000x1688/680x383/cdn0.vox-cdn.com/uploads/chorus_image/image/50435205/GettyImages-166412919.0.jpg")
+}
+
+.box-element-3{
+	background-image: url("https://cdn0.vox-cdn.com/thumbor/g32gnwT2lswtoOBV8-k64XNHTd0=/0x0:2039x1147/680x383/cdn0.vox-cdn.com/uploads/chorus_image/image/50434073/evga_sc17_vlad_savov.0.0.jpg")
+}
+
+.box-element-1:after{
+			  content:"";
+			  width: 100%;
+			  height: 100%;
+			  display: block;
+			  position: absolute;
+			  top:0;
+			  left: 0;
+			  z-index: -1;
+			  background-color: #292484;
+			  background-image: linear-gradient(135deg, #292484,#dc4225);
+			  opacity: 0.7;
+}
+
+.box-element-2:after{
+			  content:"";
+			  width: 100%;
+			  height: 100%;
+			  display: block;
+			  position: absolute;
+			  top:0;
+			  left: 0;
+			  z-index: -1;
+			  background-color: #002f4b;
+			  background-image: linear-gradient(135deg, #002f4b,#417711);
+			  opacity: 0.7;
+}
+
+.box-element-3:after{
+			  content:"";
+			  width: 100%;
+			  height: 100%;
+			  display: block;
+			  position: absolute;
+			  top:0;
+			  left: 0;
+			  z-index: -1;
+			  background-color: #292484;
+			  background-image: linear-gradient(135deg, #292484,#a83279);
+			  opacity: 0.7;
+}
+
+.box p{
+	z-index: 10;
+	color:white;
+	margin-top: .5rem;
+	position: relative;
+
+}
+
+.box p span{
+	background-color: #4a8813;
+	float: right;
+	font-size: 0.9rem;
+    font-weight: 700;
+    padding: .1rem;
+}
+
+.count:after{
+	    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border: 0 solid transparent;
+    border-top-color: #000;
+    border-width: 5px 7px 0 0px;
+    position: absolute;
+    top: 100%;
+    right: 0;
+}
+
+.image-slider{
+	width:320px;
+	height: 12.5REM;
+	white-space: nowrap;
+	overflow-x: scroll;
+	overflow-y: hidden;
+
+}
+
+.image-slider-images{
+	width:100%;
+	height:12.5REM;
+	margin-right: -.25rem;
+
+}
 
