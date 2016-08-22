@@ -6,6 +6,7 @@ header{
 	width: 100%;
 	height:60px;
 	background-color: #fa4b2a;
+	position: relative;
 }
 .nav{
 	width:60px;
@@ -32,14 +33,20 @@ header{
 	height: auto;
 	margin: 12px auto;
 }
+.dropdown-arrow img{
+	display: none;
+}
 .new-articles{
 	margin:3px auto;
 	height:54px;
 	width:80px;
-	float: right;
+	position: absolute;
+	top: 0;
+	right: 0;
 	border-left: 1px solid white;
 	text-align: center;
 	color: white;
+
 }
 .articles
 {
@@ -130,14 +137,17 @@ header{
 }
 
 .box-element-1{
+	background-position: center;
 	background-image: url('https://cdn0.vox-cdn.com/thumbor/ivsHgXHY572hECkjL2fcMiZQfZs=/0x0:2039x1147/680x383/cdn0.vox-cdn.com/uploads/chorus_image/image/50439647/twitter-stock-0936.0.0.jpg');
 }
 
 .box-element-2{
+	background-position: center;
 	background-image: url("https://cdn3.vox-cdn.com/thumbor/17EGquPIi4Gb83So72Eczuaxvmg=/0x0:3000x1688/680x383/cdn0.vox-cdn.com/uploads/chorus_image/image/50435205/GettyImages-166412919.0.jpg")
 }
 
 .box-element-3{
+	background-position: center;
 	background-image: url("https://cdn0.vox-cdn.com/thumbor/g32gnwT2lswtoOBV8-k64XNHTd0=/0x0:2039x1147/680x383/cdn0.vox-cdn.com/uploads/chorus_image/image/50434073/evga_sc17_vlad_savov.0.0.jpg")
 }
 
@@ -196,11 +206,11 @@ header{
 	float: right;
 	font-size: 0.9rem;
     font-weight: 700;
-    padding: .1rem;
+    padding: 3px;
 }
 
 .count:after{
-	    content: '';
+	content: '';
     display: block;
     width: 0;
     height: 0;
@@ -208,23 +218,301 @@ header{
     border-top-color: #000;
     border-width: 5px 7px 0 0px;
     position: absolute;
-    top: 100%;
+    top: 25px;
     right: 0;
 }
 
 .image-slider{
-	width:320px;
-	height: 12.5REM;
+	width:100%;
+	height: 11REM;
 	white-space: nowrap;
 	overflow-x: scroll;
 	overflow-y: hidden;
+	font-size: 0;
+}
+
+.scroll-element-1{
+
+	display: inline-block;
+	background-image: url("https://cdn0.vox-cdn.com/thumbor/_LamKjLbzzvRiF-ITxI6FLfmNYI=/0x118:1483x952/340x192/filters:format(webp)/cdn0.vox-cdn.com/uploads/chorus_image/image/50467925/binti.0.jpg");
+}
+.scroll-element-1 h2{
+	white-space: normal;
+	font-size: 25px;
+}
+.scroll-element-1 p{
+	white-space: normal;
+	font-size: 16px;
 
 }
 
-.image-slider-images{
-	width:100%;
-	height:12.5REM;
-	margin-right: -.25rem;
+.scroll-element-1:after{
+	content:"";
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	top:0;
+	left: 0;
+	z-index: -1;
+	background-color: #d38312;
+	background-image: linear-gradient(135deg, #d38312,#002f4b);
+	opacity: 0.7;
+}
+
+.scroll-element-2{
+	display: inline-block;
+	background-image: url("https://cdn2.vox-cdn.com/thumbor/CETEXs_F2J1NUk9B7eiVmh4bgGE=/0x0:600x600/350x350/filters:format(webp)/cdn0.vox-cdn.com/uploads/chorus_image/image/50464891/blond.0.0.jpg");
+}
+
+.scroll-element-2 h2{
+	font-size: 25px;
+	white-space: normal;
+}
+.scroll-element-2 p{
+	white-space: normal;
+	font-size: 16px;
 
 }
+
+.scroll-element-2:after{
+	content:"";
+	width: 100%;
+	height: 100%;
+	display: block;
+	position: absolute;
+	top:0;
+	left: 0;
+	z-index: -1;
+	background-color: #e0be00;
+    background-image: linear-gradient(135deg, #e0be00,#dc4225);
+    opacity: 0.7;
+}
+
+.article-container{
+	height: 75px;
+	padding: 18px;
+	position: relative;
+}
+.article-container img{
+	width: 75px;
+	height: 75px;
+}
+
+
+.article-content{
+	display: inline-block;
+	position: absolute;
+	top:20px;
+	left:100px;
+}
+.article-content h4{
+	color:rgb(68, 68, 68);
+	font-family: 'Abel', sans-serif;
+	padding-right: 18px;
+}
+
+.article-author{
+	width:4rem;
+	font-size: .6rem;
+	border-right: 1px solid #444;
+	margin-top: .5rem;
+	display: inline-block;
+}
+
+.article-update-time{
+	margin-left: .4rem;
+	display: inline-block;
+	font-size: .6rem;
+	color: #444;
+}
+
+footer{
+	background-color: black;
+	width: 100%;
+	height: auto;
+	padding-bottom: 50px;
+}
+.search-articles{
+	padding: 27px 27px 18px 27px;
+}
+
+#search-box{
+	width:16rem;
+	height:3.1rem;
+}
+::-webkit-input-placeholder {
+   	padding-left: 10px;
+    color: #444;
+    font-size: .9rem;
+}
+.footer-column-elements{
+	font-size: 1rem;
+    font-weight: 600;
+    color: #999;
+	display: inline-block;
+	width: 8rem;
+	font-family: 'Abel', sans-serif;
+}
+.footer-column-1{
+	padding-left: 27px;
+}
+.footer-column-2{
+	vertical-align: top;
+}
+.footer-column-elements ul li{
+	display: block;
+	list-style: none;
+	margin-top: .5rem;
+
+}
+
+@media only screen and (min-width: 700px) {
+
+ 
+ 	.logo{
+ 		height:100%;
+ 		width:174px;
+ 	}
+ 	.header-dropdown{
+ 		width:21.1rem;
+ 		height: 100%;
+ 		background-color: white;
+ 		float: left;
+ 		margin-left: 46px;
+ 	}
+ 	.new-articles{
+ 		border:none;
+ 	}
+ 	#content{
+ 		position: relative;
+ 	}
+ 	
+ 	.box-element-1{
+ 		width:50%;
+ 		height:21.9rem;
+ 		vertical-align: top;
+ 		position: absolute;
+ 		top:0;
+ 		left: 0;
+ 		position: relative;
+ 		
+ 	}
+ 	.grouped-elements{
+ 		position: absolute;
+ 		top: 0;
+ 		right: 0;
+ 		width:50%;
+ 	}
+ 	.box-element-2{
+ 		width:100%;
+ 		height: 10.9rem;
+ 		
+ 	}
+ 	.box-element-3{
+ 		width:100%;
+ 		height: 10.95rem;
+ 		
+ 	}
+ 	.image-slider{
+		position: relative;
+		/*top:21.9rem;*/
+		width:100%;
+		white-space: nowrap;
+		overflow-x: scroll;
+		overflow-y: hidden;
+
+ 	}
+ 	.scroll-element-1{
+	 	width: 70%;
+	 	display: inline-block;
+ 	}
+ 	.scroll-element-2{
+	 	width: 70%;
+	 	display: inline-block;
+ 	}
+	.article-section{
+ 		position: relative;
+		width:100%;
+ 	}
+ 	.article-container{
+ 		height: auto;
+ 		width: 44.5%;
+
+ 	}
+ 	.article-container img{
+ 		position: relative;
+ 		
+ 		width:100%;
+ 		height: auto;
+ 		margin-top:100px;
+ 	}
+ 	.article-content{
+ 		position: absolute;
+ 		top:15px;
+ 		left: 20px;
+ 	}
+ 	.article-content h4{
+ 		font-size: 25.5px;
+ 	}
+
+ 	.article-author{
+ 		width: auto;
+ 		font-size: 14px;
+ 		padding-right: .5rem;
+ 	}
+ 	.article-1{
+ 		display: inline-block;
+	}
+ 	.article-2{
+ 		display: inline-block;
+ 	}
+ 	.article-3{
+ 		display: inline-block;
+ 	}
+ 	.article-4{
+ 		display: inline-block;
+ 	}
+ 	.article-container:before{
+ 	content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 1px solid #919191;
+    border-width: 1px 0 0 1px;
+    display: block;
+    width: 5px;
+    height: 5px;
+    z-index: 10;
+ 	}
+ 	.article-container:after{
+ 	content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 1px solid #919191;
+    border-width: 1px 1px 0 0;
+    display: block;
+    width: 5px;
+    height: 5px;
+    z-index: 10;
+ 	}
+
+ 	.dropdown-arrow{
+ 		width:10%;
+ 		height: 60px;
+ 		float: right;
+ 		background-color: #f0f0f0;
+
+ 	}
+ 	.dropdown-arrow img{
+ 		width: 9px;
+ 		height: 5px;
+ 	    display: block;
+ 	  	margin-top: 30px;
+   		margin-left: 11px;
+ 	}
+ 
+
+ }
 
