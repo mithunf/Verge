@@ -25,24 +25,41 @@ $('.articles-closepad').click(function(){
 
 
 $(document).ready(function(){
+    var flag=true;
     $(".nav").click(function(){
-        $("#mySidenav").animate({left: '0px'},"slow");
-        $(".nav-closepad").animate({left: '0px'},"slow");
+        $("#mySidenav").animate({left: '0px'},"fast");
+        $(".nav-closepad").animate({left: '0px'},"fast");
     });
 
      $(".nav-closepad").click(function(){
-        $("#mySidenav").animate({left: '-252px'},"slow");
-        $(".nav-closepad").animate({left: '-322px'},"slow");
+        $("#mySidenav").animate({left: '-252px'},"fast");
+        $(".nav-closepad").animate({left: '-100%'},"fast");
     });
 
      $(".new-articles").click(function(){
-        $("#articles-divopen").animate({right: '0px'},"slow");
-        $(".articles-closepad").animate({right: '0px'},"slow");
+        $("#articles-divopen").animate({right: '0px'},"fast");
+        $(".articles-closepad").animate({right: '0px'},"fast");
     });
 
      $(".articles-closepad").click(function(){
-        $("#articles-divopen").animate({right: '-252px'},"slow");
-        $(".articles-closepad").animate({right: '-322px'},"slow");
+        $("#articles-divopen").animate({right: '-252px'},"fast");
+        $(".articles-closepad").animate({right: '-100%'},"fast");
+    });
+    $(".dropdown-arrow").click(function(){
+        if(flag==true){
+            $(".dropdown-items").animate({top: '60px'},"fast");
+            flag=false;
+            var icon = $("#down").find("img");
+            //console.log(icon);
+            $(".dropdown-arrow").prepend(icon);
+        }
+        else{
+            $(".dropdown-items").animate({top: '-320px'},"fast");
+            flag=true;
+            var icon = $("#up").find("img");
+            $(".dropdown-arrow").innerHTML = icon;
+        }
+        
     });
 });
 
