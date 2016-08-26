@@ -2,7 +2,7 @@
 	margin: 0;
 	padding: 0;
 }
-header{
+.main-header{
 	width: 100%;
 	height:60px;
 	background-color: #fa4b2a;
@@ -16,33 +16,18 @@ header{
 	text-align: center;
 	vertical-align: middle;
 	line-height: 60px;
-}
-
-.nav span{
 	color:white;
 	font-size:30px;
 	cursor:pointer
 }
 .logo{
-	height: 100%;
 	width:8.8rem;
 	float:left;
+	height: 90%;
 }
-.logo img{
-	width: 100%;
-	height: auto;
-	margin: 12px auto;
-}
-.header-dropdown-content{
+.hidden-elements-320px{
 	display: none;
 }
-.dropdown-arrow{
-	display: none;
-}
-.dropdown-items{
-	display: none;
-}
-
 .new-articles{
 	margin:3px auto;
 	height:54px;
@@ -53,15 +38,9 @@ header{
 	border-left: 1px solid white;
 	text-align: center;
 	color: white;
-
 }
-
-.articles
-{
+.articles{
 	display: block;
-}
-.article-paragraph {
-	display: none;
 }
 .sidenav {
     height: 100%;
@@ -76,8 +55,7 @@ header{
     color: white;
     font-family: 'Oswald', sans-serif;
     font-size: 12px;
-        border-right: 2px solid #fa4b2a;
-    /*padding-top: 60px;*/
+    border-right: 2px solid #fa4b2a;
 }
 .sidenav ul{
 	display: block;
@@ -86,9 +64,8 @@ header{
 	width:2.3rem;
 	height: auto;
 }
-
 .user-icon{
-	    padding: 0.7rem 1rem 0.5rem 1rem;
+	padding: 0.7rem 1rem 0.5rem 1rem;
 }
 .sidenav-items{
     border-left: 4px solid #fa4b2a;
@@ -96,29 +73,22 @@ header{
     padding: 0.7rem 1rem 0.5rem 2.25rem;
     background-color: #222;
 }
-.nav-closepad{
+.closepad{
 	height: 100%;
     width: 100%;
     position: fixed;
     z-index: 1;
     top: 0;
-    left: -100%;
     background-color: #111;
     overflow-x: hidden;
     transition: 0.3s;
-     opacity: 0;
+    opacity: 0;
+}
+.nav-closepad{
+	left: -100%;
 }
 .articles-closepad{
-	height: 100%;
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: -100%;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.3s;
-     opacity: 0;
+	right: -100%;
 }
 .articles-div{
 	height: 100%;
@@ -134,8 +104,7 @@ header{
 }
 
 .box{
- 	
-	clear: both;
+ 	clear: both;
 	width:100%;
 	height:11rem;
 	background-size: cover;
@@ -145,20 +114,18 @@ header{
 	padding: 1rem;
 	color:white;
 	font-family: 'Roboto Slab', serif;
+	background-position: center;
 }
 
 .box-element-1{
-	background-position: center;
 	background-image: url('https://cdn0.vox-cdn.com/thumbor/ivsHgXHY572hECkjL2fcMiZQfZs=/0x0:2039x1147/680x383/cdn0.vox-cdn.com/uploads/chorus_image/image/50439647/twitter-stock-0936.0.0.jpg');
 }
 
 .box-element-2{
-	background-position: center;
 	background-image: url("https://cdn3.vox-cdn.com/thumbor/17EGquPIi4Gb83So72Eczuaxvmg=/0x0:3000x1688/680x383/cdn0.vox-cdn.com/uploads/chorus_image/image/50435205/GettyImages-166412919.0.jpg")
 }
 
 .box-element-3{
-	background-position: center;
 	background-image: url("https://cdn0.vox-cdn.com/thumbor/g32gnwT2lswtoOBV8-k64XNHTd0=/0x0:2039x1147/680x383/cdn0.vox-cdn.com/uploads/chorus_image/image/50434073/evga_sc17_vlad_savov.0.0.jpg")
 }
 
@@ -209,9 +176,7 @@ header{
 	color:white;
 	margin-top: .5rem;
 	position: relative;
-
 }
-
 .box p span{
 	background-color: #4a8813;
 	float: right;
@@ -219,7 +184,6 @@ header{
     font-weight: 700;
     padding: 3px;
 }
-
 .count:after{
 	content: '';
     display: block;
@@ -232,7 +196,6 @@ header{
     top: 25px;
     right: 0;
 }
-
 .image-slider{
 	width:100%;
 	height: 11REM;
@@ -241,9 +204,7 @@ header{
 	overflow-y: hidden;
 	font-size: 0;
 }
-
 .scroll-element-1{
-
 	display: inline-block;
 	background-image: url("https://cdn0.vox-cdn.com/thumbor/_LamKjLbzzvRiF-ITxI6FLfmNYI=/0x118:1483x952/340x192/filters:format(webp)/cdn0.vox-cdn.com/uploads/chorus_image/image/50467925/binti.0.jpg");
 }
@@ -254,7 +215,6 @@ header{
 .scroll-element-1 p{
 	white-space: normal;
 	font-size: 16px;
-
 }
 
 .scroll-element-1:after{
@@ -337,7 +297,7 @@ header{
 .article-update-time{
 	margin-left: .4rem;
 	display: inline-block;
-	font-size: .6rem;
+	font-size: .8rem;
 	color: #444;
 }
 .allnews{
@@ -443,12 +403,10 @@ footer{
 }
 .vox-media-icon{
 	display: inline-block;
-
-}
-.vox-media-icon img{
 	width: 25px;
 	height: 25px;
 	margin-bottom: 5px;
+
 }
 .footer-logo p{
 	color: white;
@@ -717,20 +675,19 @@ footer{
 
  	.article-author{
  		width: auto;
- 		font-size: 14px;
+ 		font-size: 15px;
  		padding-right: .5rem;
  	}
  	.article-paragraph{
  		display: inline-block;
  		width:100%;
  		height: auto;
- 	}
- 	.article-paragraph p{
  		margin-top: .9rem;
  		margin-bottom: .9rem;
- 		font-size: .85rem;
+ 		font-size: 1.1rem;
     	line-height: 1.4;
  	}
+
  	.column-1-2{
  		display: inline-block;
  		width: 50%;
@@ -812,17 +769,14 @@ footer{
  		color: #fa4b2a;
  		text-decoration: none;
  	}
- 	.more-videos{
- 		display: inline-block;
- 	}
- 	.more-videos h4{
+ 	.more-videos {
  		color:white;
  		display: inline-block;
  		position: absolute;
  		top: 1.4rem;
  		right: 1rem;
  	}
- 	.more-videos h4 a{
+ 	.more-videos a{
  		text-decoration: none;
  		color:#fa4b2a;
  	}
@@ -835,7 +789,7 @@ footer{
  		position: relative;
  		vertical-align: top;
  	}
- 	.current-video h3{
+ 	.current-video p{
  		position: absolute;
  		bottom: 1rem;
  		left: 1rem;
@@ -933,18 +887,15 @@ footer{
  	}
  	.video-text{
  		display: inline-block;
- 		height: 100%;
  		width: 60%;
  		vertical-align: top;
  		padding-right: 1rem;
  		padding-left: 1rem;
  		box-sizing: border-box;
- 	}
- 	.video-text h4{
  		font-size: .8rem;
  		color: white;
- 		margin-top: 16%;
  		font-weight: normal;
+ 		margin-top: 30px;
  	}
  	.video-icon-1{
  		background-image: url('https://cdn2.vox-cdn.com/thumbor/qULzMxN4vZYrtWAv_yDVFt4-YYU=/350x0:1919x1046/300x200/cdn0.vox-cdn.com/uploads/chorus_image/image/50423433/VRG_TMN_051_Best_Universal_Remote_Thumb.0.0.jpeg');
