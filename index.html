@@ -19,18 +19,16 @@
 		<header class="main-header">
 			<span class="nav">&#9776; </span>
 			<img src="images/logo.png" class = "logo">
-			<div class= "header-dropdown">
+			<section class= "header-dropdown">
 				<div class = "header-dropdown-content hidden-elements-320px">
 					<h6>TRENDING NOW</h6>
 					<h5>Android 7.0 Nougat review: great, but does it matter?</h5>
 				</div>
 				<div class = "dropdown-arrow hidden-elements-320px">
-					<p id="down">&#x25BC;</p>
-					<p id="up">&#x25B2;</p>
-					<p class = "arrow-toggle">&#x25BC;</p>
-					<a href="#" class = "visited"></a>
+					<p class = "arrow-down">&#x25BC;</p>
+					<p class="arrow-up">&#x25B2;</p>
 				</div>
-			</div>
+			</section>
 			<span class = "new-articles">
 				<strong class = "articles article-count">12</strong>
 				<em class = "articles">NEW ARTICLES</em>
@@ -52,22 +50,22 @@
 					<li class = "sidenav-items">MORE ELEMENTS</li>	
 				</ul>
 			</nav>
-			<div class = "nav-closepad closepad"></div>
-			<div class = "articles-closepad closepad"></div>
 			<nav id = "articles-divopen" class = "articles-div"></nav>
 			<section class="dropdown-items hidden-elements-320px">
-				<article class = "dropdown-items-1 dropdown-items-common">
-					<h5>Here's how to install Android Nougat on a Nexus right now</h5>
-				</article>
-				<article class = "dropdown-items-2 dropdown-items-common">
-					<h5>Seriously, don't drop your Galaxy Note 7</h5>
-				</article>
-				<article class = "dropdown-items-3 dropdown-items-common">
-					<h5>The best smart lights you can buy</h5>
-				</article>
-				<article class = "dropdown-items-4 dropdown-items-common">
-					<h5>Apple said to have a curved iPhone in 2017, just like Samsung</h5>
-				</article>
+				<ul>
+					<li class = "dropdown-items-1 dropdown-items-common">
+						<h5>Here's how to install Android Nougat on a Nexus right now</h5>
+					</li>
+					<li class = "dropdown-items-2 dropdown-items-common">
+						<h5>Seriously, don't drop your Galaxy Note 7</h5>
+					</li>
+					<li class = "dropdown-items-3 dropdown-items-common">
+						<h5>The best smart lights you can buy</h5>
+					</li>
+					<li class = "dropdown-items-4 dropdown-items-common">
+						<h5>Apple said to have a curved iPhone in 2017, just like Samsung</h5>
+					</li>
+				</ul>
 			</section>
 		</header>
 
@@ -168,8 +166,8 @@
 				</article>
 			</div>
 		</section>
-		<section class="allnews">SEE ALL NEWS</section>
-		<section class = "to-top">BACK TO TOP ^</section>
+		<a href="#" class="allnews">SEE ALL NEWS</a>
+		<a href="#" class="to-top">BACK TO TOP ^</a>
 
 		<footer>
 			<div class = "search-articles">
@@ -233,10 +231,11 @@
 			<section class = "footer-status">
 				<a href="#">Ethics Statement</a> - <a href="#">Community Guidelines</a></br>
 				<a href="#">Terms of Use </a> - <a href="#">Privacy Policy</a></br>
-				<span>All Systems Operational</br><a href="">Check out our status page for more details.</a></span>
+				<p>All Systems Operational</br><a href="">Check out our status page for more details.</a></p>
 			</section>
 		</footer>
 	</div>
+	<div class = "nav-closepad"></div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 <script src="js/script.js"></script>
 </body>
